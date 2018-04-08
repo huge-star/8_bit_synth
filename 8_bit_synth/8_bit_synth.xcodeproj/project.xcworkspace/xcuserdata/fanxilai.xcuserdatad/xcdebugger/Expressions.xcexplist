@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "main:main.c">
+      </ContextState>
+      <ContextState
+         contextName = "del:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "*(ch + i)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "getnum:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "(num % f - num % g) / pow(10, n-1)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "add2list:main.c">
+      </ContextState>
+      <ContextState
+         contextName = "add2list_index:main.c">
+      </ContextState>
+      <ContextState
+         contextName = "push:main.c">
+      </ContextState>
+      <ContextState
+         contextName = "num2chars:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "(char)getnum(t, l)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LinkedListInsert:linked_list.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "p-&gt;next">
+            </PersistentString>
+            <PersistentString
+               value = "pre">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
