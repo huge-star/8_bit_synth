@@ -9,11 +9,13 @@
 #ifndef main_h
 #define main_h
 
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <math.h>
 #include <ctype.h>
+#include <stdlib.h>
+
 
 char * my_strstr(char * ps, char *pd);
 void * memorycpy(void * dest, const void *src, size_t count);

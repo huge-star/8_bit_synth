@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C077F05207A433500CB5939 /* substitude.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C077F04207A433500CB5939 /* substitude.c */; };
+		6C077F08207A43C600CB5939 /* calculate.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C077F07207A43C600CB5939 /* calculate.c */; };
 		6CE3BD592065056700F78A0B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3BD582065056700F78A0B /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		6C077F02207A410600CB5939 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		6C077F03207A433500CB5939 /* substitude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = substitude.h; sourceTree = "<group>"; };
 		6C077F04207A433500CB5939 /* substitude.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = substitude.c; sourceTree = "<group>"; };
+		6C077F06207A43C600CB5939 /* calculate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = calculate.h; sourceTree = "<group>"; };
+		6C077F07207A43C600CB5939 /* calculate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = calculate.c; sourceTree = "<group>"; };
 		6CE3BD552065056700F78A0B /* 8_bit_synth */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 8_bit_synth; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE3BD582065056700F78A0B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +68,8 @@
 				6C077F03207A433500CB5939 /* substitude.h */,
 				6C077F04207A433500CB5939 /* substitude.c */,
 				6C077F02207A410600CB5939 /* main.h */,
+				6C077F06207A43C600CB5939 /* calculate.h */,
+				6C077F07207A43C600CB5939 /* calculate.c */,
 			);
 			path = 8_bit_synth;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CE3BD592065056700F78A0B /* main.c in Sources */,
+				6C077F08207A43C600CB5939 /* calculate.c in Sources */,
 				6C077F05207A433500CB5939 /* substitude.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
