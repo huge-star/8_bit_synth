@@ -22,6 +22,8 @@ int calculate(int num1,int num2,char c)
             return num1 * num2;
         case '/':
             return num1 / num2;
+        case '%':
+            return num1 % num2;
         case '&':
             return num1 & num2;
         case '|':
@@ -43,18 +45,36 @@ int priority(char c)//计算运算符的优先级
     switch(c)
     {
         case '+':
-        case '-':
-        {
-            return 1;
+        case '-': {
+            return 7;
             break;
         }
         case '*':
-        case '/':
-        {
+        case '/': {
+            return 8;
+            break;
+        }
+        case '%': {
+            return 9;
+            break;
+        }
+        case '|': {
             return 2;
             break;
         }
-        
+        case '^': {
+            return 3;
+            break;
+        }
+        case '&': {
+            return 4;
+            break;
+        }
+        case '<':
+        case '>': {
+            return 5;
+            break;
+        }
         default:
         {
             return 0;

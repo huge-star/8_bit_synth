@@ -14,7 +14,9 @@ int main()
 {
     unsigned long int t = 300;
     char * sub;
-    sub = subs("3+4000/t-(50+6)*81", "t", num2chars(t));
-    printf("%d\n", cal(sub));
+    for (t = 1; t < 441000; t++) {
+        sub = subs("t|t*2|(t/1000)%3", "t", num2chars(t));
+        printf("%d\n", cal(sub) % 256);
+    }
     return 0;
 }
