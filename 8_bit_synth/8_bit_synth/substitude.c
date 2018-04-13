@@ -116,10 +116,11 @@ int getnum(unsigned long int num, int n){
 }
 
 int get(unsigned long int num) {
-    int i = 0, g = pow(10, i+1);
+    /* 用来 */
+    int i = 1, g = pow(10, i);
     while (num/g != 0) {
-        g = pow(10, i+1);
         i++;
+        g = pow(10, i);
     }
     return i;
 }

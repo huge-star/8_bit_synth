@@ -4,6 +4,11 @@
    <ContextStates>
       <ContextState
          contextName = "main:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "num2chars(t)">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "del:main.c">
@@ -22,13 +27,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "push:main.c">
+      </ContextState>
+      <ContextState
          contextName = "add2list:main.c">
       </ContextState>
       <ContextState
          contextName = "add2list_index:main.c">
-      </ContextState>
-      <ContextState
-         contextName = "push:main.c">
       </ContextState>
       <ContextState
          contextName = "num2chars:main.c">
