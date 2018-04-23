@@ -54,5 +54,22 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "writetofile:wavedealer.c">
+      </ContextState>
+      <ContextState
+         contextName = "createwave:wavedealer.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "mp">
+            </PersistentString>
+            <PersistentString
+               value = "cal(subs(&quot;t*2&quot;, &quot;t&quot;, num2chars(t))) % 256">
+            </PersistentString>
+            <PersistentString
+               value = "num2chars(t)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

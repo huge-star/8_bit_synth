@@ -12,11 +12,10 @@
 
 int main()
 {
-    unsigned long int t = 300;
-    char * sub;
-    for (t = 1; t < 441000; t++) {
-        sub = subs("t|t*2|(t/1000)%3", "t", num2chars(t));
-        printf("%d\n", cal(sub) % 256);
-    }
+    char exp[50];
+    printf("Please enter the exp >> ");
+    scanf("%s", exp);
+    generate("shit.wav", 1, exp);
     return 0;
 }
+
