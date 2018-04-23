@@ -64,10 +64,13 @@
                value = "mp">
             </PersistentString>
             <PersistentString
-               value = "cal(subs(&quot;t*2&quot;, &quot;t&quot;, num2chars(t))) % 256">
+               value = "num2chars(t)">
             </PersistentString>
             <PersistentString
-               value = "num2chars(t)">
+               value = "((cal(subs(exp, &quot;t&quot;, num2chars(3)))) * d_samplehz) ">
+            </PersistentString>
+            <PersistentString
+               value = "((cal(subs(exp, &quot;t&quot;, num2chars(30000)))) * d_samplehz / (256 * freq)) % 256">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

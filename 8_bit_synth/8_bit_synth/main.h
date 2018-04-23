@@ -24,6 +24,6 @@ char * subs(char * a, char * b, char * c);
 int getnum(unsigned long int num, int n);
 int get(unsigned long int num);
 char* num2chars(unsigned long int t);
-void generate(char * output_name, int timelen, char * exp);
+void generate(char * output_name, int timelen, char * exp, int freq);
 
 #endif /* main_h */

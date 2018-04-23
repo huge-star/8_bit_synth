@@ -15,7 +15,7 @@ int main()
     char exp[50];
     printf("Please enter the exp >> ");
     scanf("%s", exp);
-    generate("shit.wav", 1, exp);
+    generate("shit.wav", 1, exp, 440);
     return 0;
 }
 

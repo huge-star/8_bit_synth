@@ -228,7 +228,8 @@ int compare_priority(char *str,char *stack2,int *top2,int *stack1,int *top1)
 }
 
 int cal(char * exp) {
-    int num,num1,total = -1;
+    int num,num1 = -1;
+    int total = -1;
     char c;
     char *dest = (char *)malloc(sizeof(100));
     char *temp = dest;                        //记录分配空间的首地址

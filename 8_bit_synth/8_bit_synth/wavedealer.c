@@ -144,7 +144,7 @@ uchar writetofile(uchar nameout[])
     fclose(fq);
     return 1;
 }
-void createwave(int timelen, char * exp) //¥¥Ω®≤®–Œ∫Ø ˝
+void createwave(int timelen, char * exp, int freq) //¥¥Ω®≤®–Œ∫Ø ˝
 {
     long int t;
     double n;
@@ -167,13 +167,13 @@ void createwave(int timelen, char * exp) //¥¥Ω®≤®–Œ∫Ø ˝
     mp = (uchar *)malloc(d_datasize);
     for (t = 1; t<d_datasize; t++)
     {
-        mp[t-1] = cal(subs(exp, "t", num2chars(t))) % 256;
+        mp[t-1] = (((cal(subs(exp, "t", num2chars(t)))) * d_samplehz) / (256 * freq)) % 256;
     }
     system("clear");
 }
 
-void generate(char * output_name, int timelen, char * exp) {
-    createwave(timelen, exp);
+void generate(char * output_name, int timelen, char * exp, int freq) {
+    createwave(timelen, exp, freq);
     printf("the file you create has been ready!\n");
     printf(" \ninput the name of the output file:");
     writetofile(output_name);
