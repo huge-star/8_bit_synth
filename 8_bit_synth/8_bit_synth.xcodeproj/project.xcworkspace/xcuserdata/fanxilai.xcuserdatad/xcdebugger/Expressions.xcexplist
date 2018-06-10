@@ -67,10 +67,13 @@
                value = "num2chars(t)">
             </PersistentString>
             <PersistentString
-               value = "((cal(subs(exp, &quot;t&quot;, num2chars(3)))) * d_samplehz) ">
+               value = "((cal(subs(exp, &quot;t&quot;, num2chars(t)))) * d_samplehz) ">
             </PersistentString>
             <PersistentString
-               value = "((cal(subs(exp, &quot;t&quot;, num2chars(30000)))) * d_samplehz / (256 * freq)) % 256">
+               value = "(((cal(subs(exp, &quot;t&quot;, num2chars(t)))) * d_samplehz) / (256 * freq)) % 256">
+            </PersistentString>
+            <PersistentString
+               value = "subs(exp, &quot;t&quot;, num2chars(t))">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

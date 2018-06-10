@@ -10,7 +10,7 @@
 #define MAX_SIZE 100
 
 
-int calculate(int num1,int num2,char c)
+long int calculate(long int num1,long int num2,char c)
 {
     switch(c)
     {
@@ -40,7 +40,7 @@ int calculate(int num1,int num2,char c)
     return -1;
 }
 
-int priority(char c)//计算运算符的优先级
+long int priority(char c)//计算运算符的优先级
 {
     switch(c)
     {
@@ -83,18 +83,18 @@ int priority(char c)//计算运算符的优先级
     return 0;
 }
 
-void initialize_stack(int *stack,int *top)//初始化顺序栈
+void initialize_stack(long int *stack,long int *top)//初始化顺序栈
 {
-    int i;
+    long int i;
     for(i = 0;i < MAX_SIZE;i ++)
     {
         stack[i] = 0;
     }
     *top = -1;
 }
-void initialize_stack2(char *stack,int *top)
+void initialize_stack2(char *stack,long int *top)
 {
-    int i;
+    long int i;
     for(i = 0;i < MAX_SIZE;i ++)
     {
         stack[i] = 0;
@@ -102,7 +102,7 @@ void initialize_stack2(char *stack,int *top)
     *top = -1;
 }
 
-int is_stack_full(int *top)//检查栈是不是满
+long int is_stack_full(long int *top)//检查栈是不是满
 {
     if(*top == MAX_SIZE - 1)
     {
@@ -111,7 +111,7 @@ int is_stack_full(int *top)//检查栈是不是满
     return STACK_OK;
 }
 
-int is_stack_empty(int *top)//检查栈是不是空
+long int is_stack_empty(long int *top)//检查栈是不是空
 {
     if(*top == -1)
     {
@@ -121,7 +121,7 @@ int is_stack_empty(int *top)//检查栈是不是空
 }
 
 
-int push_stack(int *stack,int *num,int *top)//入栈
+long int push_stack(long int *stack,long int *num,long int *top)//入栈
 {
     if(is_stack_full(top) == STACK_FULL)
     {
@@ -132,7 +132,7 @@ int push_stack(int *stack,int *num,int *top)//入栈
     return PUSH_SUCCESS;
 }
 
-int push_stack2(char *stack,char *c,int *top)
+long int push_stack2(char *stack,char *c,long int *top)
 {
     if(is_stack_full(top) == STACK_FULL)
     {
@@ -143,9 +143,9 @@ int push_stack2(char *stack,char *c,int *top)
     return PUSH_SUCCESS;
 }
 
-int pop_stack(int *stack,int *top)//出栈
+long int pop_stack(long int *stack,long int *top)//出栈
 {
-    int num;
+    long int num;
     if(is_stack_empty(top) == STACK_EMPTY)
     {
         return STACK_EMPTY;
@@ -154,7 +154,7 @@ int pop_stack(int *stack,int *top)//出栈
     (*top) --;
     return num;
 }
-char pop_stack2(char *stack,int *top)
+char pop_stack2(char *stack,long int *top)
 {
     char c;
     if(is_stack_empty(top) == STACK_EMPTY)
@@ -168,9 +168,9 @@ char pop_stack2(char *stack,int *top)
 #if 0
 比较解析的运算符+-*/（）与栈顶运算符的优先级,按照规则进行各种出入栈运算
 #endif
-int compare_priority(char *str,char *stack2,int *top2,int *stack1,int *top1)
+long int compare_priority(char *str,char *stack2,long int *top2,long int *stack1,long int *top1)
 {
-    int num,num1,total;
+    long int num,num1,total;
     char c;
     if(*str == '\0')//文件尾时，正常退出
     {
@@ -227,20 +227,20 @@ int compare_priority(char *str,char *stack2,int *top2,int *stack1,int *top1)
     return SUCCESS;
 }
 
-int cal(char * exp) {
-    int num,num1 = -1;
-    int total = -1;
+long int cal(char * exp) {
+    long int num,num1 = -1;
+    long int total = -1;
     char c;
     char *dest = (char *)malloc(sizeof(100));
     char *temp = dest;                        //记录分配空间的首地址
     char *str = (char *)malloc(sizeof(100));//保存需要计算的表达式字符串。
     
-    int stack1[MAX_SIZE];                    //操作数栈
-    int top1;
+    long int stack1[MAX_SIZE];                    //操作数栈
+    long int top1;
     initialize_stack(stack1,&top1);            //初始化栈
     
     char stack2[MAX_SIZE];                    //运算符栈
-    int top2;
+    long int top2;
     initialize_stack2(stack2,&top2);
     
     str = exp;

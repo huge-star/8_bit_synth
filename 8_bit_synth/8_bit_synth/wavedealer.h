@@ -55,7 +55,7 @@ uchar nameo[15]; //µº≥ˆŒƒº˛√˚
 FILE *fp; //∂¡»°”√Œƒº˛÷∏’Î
 FILE *fq; //–¥»Î”√Œƒº˛÷∏’Î
 
-int cal(char * exp);
+long int cal(char * exp);
 
 
 #endif /* wavedealer_h */

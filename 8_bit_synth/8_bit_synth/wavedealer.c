@@ -9,9 +9,7 @@
 #include "wavedealer.h"
 
 
-/*************************************/
-/*============ ˝æ›◊™ªª◊”∫Ø ˝=============*/
-void data2array(uint x, uchar a[], uchar n)           //∞— ˝æ›◊™ªª≥…◊÷∑˚–Œ Ω
+void data2array(uint x, uchar a[], uchar n)
 //Ω´ µº  ˝æ›◊™ªØŒ™ƒ⁄¥Ê¥¢¥Ê–Œ Ω
 {
     uchar i;
@@ -167,7 +165,7 @@ void createwave(int timelen, char * exp, int freq) //¥¥Ω®≤®–Œ∫Ø ˝
     mp = (uchar *)malloc(d_datasize);
     for (t = 1; t<d_datasize; t++)
     {
-        mp[t-1] = (((cal(subs(exp, "t", num2chars(t)))) * d_samplehz) / (256 * freq)) % 256;
+        mp[t-1] = (((cal(subs(exp, "t", num2chars(t)))) * d_samplehz * 163) / (256 * freq * 100)) % 256;
     }
     system("clear");
 }
@@ -175,7 +173,7 @@ void createwave(int timelen, char * exp, int freq) //¥¥Ω®≤®–Œ∫Ø ˝
 void generate(char * output_name, int timelen, char * exp, int freq) {
     createwave(timelen, exp, freq);
     printf("the file you create has been ready!\n");
-    printf(" \ninput the name of the output file:");
+    
     writetofile(output_name);
     printf("\n\nmission complete!\n\n");
     system("clear");
